@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color: #200016;
+    --color2: #10001f;
+    --color3: #fff;
+}
+
+body{
+    background: linear-gradient(var(--color), var(--color2));
+    height: 100vh;
+    font-family: system-ui;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color3);
+}
+
+header{
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+header ul li{
+    margin-right: 30px;
+}
+
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+header ul li a:hover{
+    background-color: var(--color3);
+    color: var(--color);
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top,var(--color2),transparent);
+}
+
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+
+.nouvil{
+    color: var(--color3);
+    font-size: 25px;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+
+.content{
+    color: var(--color3);
+    padding: 30px;
+}
+
+.content h2{
+    font-size: 30px;
+    margin: 20px;
+}
+
+.content p{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
